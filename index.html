@@ -14,36 +14,37 @@
 		a:link, a:active, a:visited, a:hover {text-decoration:none;}
 		a:link, a:active, a:visited {color: black;}
 		
-		body {width: 100%, width:1000px;}
+		body {}
 
-		.headertext,.maintext {font-family: "NanumGothic"}
-		.headertext {text-align:left; font-size: 2em; font-weight:600}
-		.maintext {text-align:left; font-size: 1em; line-height: 1.75}
+		.text {font-family: "NanumGothic"}
+		.text {text-align:left; font-size: 1em; line-height: 1.75}
+		h1 {text-align:left; font-size: 2em; font-weight:600; font-family: "NanumGothic"}
 
-		#logo {width: 100%; margin:auto; margin-top: 50px; float:center; text-align:center;}
+		#logo {background:green; width:1000px; margin:auto; margin-top: 50px; text-align:center;}
 		#logoimg {margin:auto; width:60px;}
 
-		nav {width:100%; margin-top:40px;}
-		nav #menulist {width:100%; float:center; margin:0; padding:0;}
-		nav #menulist .main-menu-item {list-style:none; margin:auto; float:left; width: 200px}
+		nav {background:red; width:1000px; margin:auto; margin-top:40px; }
+		nav #menulist {background:yellow; width:1000px; padding:0;}
+		nav #menulist .main-menu-item {background:green; list-style:none; margin:auto; float:left; width: 250px}
 		nav #menulist a {display: block; height:40px; line-height: 40px; text-align:center;}
 		nav #menulist a:hover {font-weight:bold;}
 
-		#homebox {margin:auto; margin-top:100px; text-align:center;}
-		#homeboximg1 {margin:auto; width: 150px;}
+		#homebox {background:blue; margin:auto; margin-top:100px; text-align:center;}
+		#homebox img {margin:auto; width: 150px;}
 
-		#homescript1 {margin:auto; margin-top:200px; text-align:center; height:300px}
-		#homescript1 img {margin:auto; width:330px; float:left; position:relative; left:150px}
-		#homescripttext1-1 {margin:auto; width:360px; float:center; position:relative; left:220px; top:20px}
-		#homescripttext1-2 {margin:auto; width:360px; float:center; position:relative; left:220px; top:40px}
+		#homescript1 {background:green; width:1000px; margin:auto; margin-top:200px; text-align:center; height:350px}
+		#homescript1 img {margin-top:20px; width:330px; float:left; position:relative; left:100px}
+		#homescript1-header{width:470px; position:relative; right:0px; top:20px}
+		#homescript1-text {width:470px; position:relative; right:45px; top:40px}
 
-		.line {margin:auto; margin-top:150px; float:center; text-align:center;}
+		.line {background:red; margin:auto; margin-top:120px; float:center; text-align:center;}
 		.line img {margin:auto; width:600px; height:3px;}
 
-		#homescript2 {margin:auto; margin-top:150px; text-align:center;}
-		#homescripttext2-1 {margin:auto; width:360px; float:center; position:relative; right:220px; top:20px}
-		#homescripttext2-2 {margin:auto; width:360px; float:center; position:relative; right:220px; top:40px}
-		#homescript2 img {margin:auto; width:360px; float:center; position:relative; right:150px; margin-top:20px}
+		#homescript2 {width:1000px; margin:auto; background:blue; margin:auto; margin-top:120px; text-align:center; height:350px}
+		#homescript2 img {width:400px; float:right; position:relative; right:30px}
+		#homescript2-header {width:470px; position:relative; left:45px; top:20px}
+		#homescript2-text {width:470px; position: relative; left:45px; top:30px;}
+		
 
 
 		#footer {margin:auto; margin-top:250px; background:black; height:220px; overflow:hidden;}
@@ -89,9 +90,9 @@
 	</div>
 
 	<div id="homescript1">
-		<img src="img/clip.png">
-		<p class="headertext" id="homescripttext1-1">CLIP STUDIO PAINT</p>
-		<p class="maintext" id="homescripttext1-2">CLIP STUDIO PAINT(이하 클립스튜디오)는 만화, 일러스트 제작자를 뒷받침하는 필수 그래픽 소프트웨어 및 응용 프로그램입니다. 클립 스튜디오는 만화를 그리기 위한 전문화 된 기능을 제공하며, 작업을 채색하는 기능이 향상되었습니다. 이 소프트웨어 또는 앱을 사용하여 만화를 만들 수 있습니다.</p>
+		<img src="img/Clip.png">
+		<h1 id="homescript1-header">CLIP STUDIO PAINT</h1>
+		<p class="text" id="homescript1-text">CLIP STUDIO PAINT(이하 클립스튜디오)는 만화, 일러스트 제작자를 뒷받침하는 필수 그래픽 소프트웨어 및 응용 프로그램입니다. 클립 스튜디오는 만화를 그리기 위한 전문화 된 기능을 제공하며, 작업을 채색하는 기능이 향상되었습니다. 이 소프트웨어 또는 앱을 사용하여 만화를 만들 수 있습니다.</p>
 	</div>
 
 	<div class="line">
@@ -99,9 +100,11 @@
 	</div>
 
 	<div id="homescript2">
-		<p class="headertext" id="homescripttext2-1">CLIP STUDIO ASSETS</p>
-		<p class="maintext" id="homescripttext2-2">CLIP STUDIO PAINT(이하 클립스튜디오)는 만화, 일러스트 제작자를 뒷받침하는 필수 그래픽 소프트웨어 및 응용 프로그램입니다. 클립 스튜디오는 만화를 그리기 위한 전문화 된 기능을 제공하며, 작업을 채색하는 기능이 향상되었습니다. 이 소프트웨어 또는 앱을 사용하여 만화를 만들 수 있습니다.</p>
 		<img src="img/homescriptimg2.png">
+		<h1 id="homescript2-header">CLIP STUDIO ASSETS</h1>
+		<p class="text" id="homescript2-text">클립 스튜디오는 포토샵과 같은 브러쉬 뿐만 아니라 3D모델이나 텍스쳐 등 다양한 소재들을 제공합니다. CLIO STUDIO ASSETS란 클립 스튜디오에서  사용할 수 있는 톤이나 3D 등의 소재를 다운로드하거나 기존 소재를 출품 할 수있는 서비스입니다. 다른 유저들이 출품한 소재를 다운로드하여 사용할 수도, 자신이 소재를 만들어 배포할 수도 있습니다.
+
+		본 홈페이지에서는 다른 유저들이 출품한 수많은 자료 중, 쓸만한 무료 소재들을 소개합니다.</p>
 	</div>
 
 	<div id="footer">
